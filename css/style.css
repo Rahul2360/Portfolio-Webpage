@@ -4,28 +4,31 @@ body {
     overflow-x: hidden;
     height: 100%;
 }
-
-/*-------------------------------*/
-/*           Wrappers            */
-/*-------------------------------*/
-
 #wrapper {
-    padding-left: 0;
+    position:relative;  
+    padding:10px 20px;
+    width:100%; 
     transition: all 0.5s ease;
+    min-height:600px;
+}
+.relative {
+    widows: 100%;
+  background:url(background.jpg);
+  background-position:center;
+  background-attachment:fixed;
+}
+.name {
+    
 }
 #wrapper.toggled {
     padding-left: 220px;
 }
 
 #sidebar-wrapper {
-    z-index: 1000;
-    left: 220px;
     width: 0;
     height: 100%;
-    margin-left: -220px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: #1a1a1a;
     transition: all 0.5s ease;
 }
 
@@ -97,15 +100,6 @@ body {
 }
 .sidebar-nav li:nth-child(6):before {
     background-color: #7d5d81;   
-}
-.sidebar-nav li:nth-child(7):before {
-    background-color: #ead24c;   
-}
-.sidebar-nav li:nth-child(8):before {
-    background-color: #2d2366;   
-}
-.sidebar-nav li:nth-child(9):before {
-    background-color: #35acdf;   
 }
 .sidebar-nav li:hover:before,
 .sidebar-nav li.open:hover:before {
