@@ -1,15 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
-}
-body {
     position: relative;
     overflow-x: hidden;
+    height: 100%;
 }
-body,
-html { height: 100%;}
-.nav .open > a, 
-.nav .open > a:hover, 
-.nav .open > a:focus {background-color: transparent;}
 
 /*-------------------------------*/
 /*           Wrappers            */
@@ -17,12 +11,8 @@ html { height: 100%;}
 
 #wrapper {
     padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 #wrapper.toggled {
     padding-left: 220px;
 }
@@ -36,9 +26,6 @@ html { height: 100%;}
     overflow-y: auto;
     overflow-x: hidden;
     background: #1a1a1a;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -89,10 +76,7 @@ html { height: 100%;}
     height: 100%;
     width: 3px;
     background-color: #1c1c1c;
-    -webkit-transition: width .2s ease-in;
-      -moz-transition:  width .2s ease-in;
-       -ms-transition:  width .2s ease-in;
-            transition: width .2s ease-in;
+    transition: width .2s ease-in;
 
 }
 .sidebar-nav li:first-child a {
@@ -126,13 +110,9 @@ html { height: 100%;}
 .sidebar-nav li:hover:before,
 .sidebar-nav li.open:hover:before {
     width: 100%;
-    -webkit-transition: width .2s ease-in;
-      -moz-transition:  width .2s ease-in;
-       -ms-transition:  width .2s ease-in;
-            transition: width .2s ease-in;
+    transition: width .2s ease-in;
 
 }
-
 .sidebar-nav li a {
     display: block;
     color: #ddd;
@@ -281,19 +261,10 @@ html { height: 100%;}
   -webkit-transition: all .35s ease-in-out;
 }
 
-/*-------------------------------*/
-/*            Overlay            */
-/*-------------------------------*/
-
 .overlay {
-    position: fixed;
     display: none;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: rgba(250,250,250,.8);
     z-index: 1;
 }
