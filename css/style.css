@@ -13,12 +13,33 @@ body {
 }
 .relative {
     widows: 100%;
-  background:url(background.jpg);
-  background-position:center;
-  background-attachment:fixed;
+    background:url(background.jpg);
+    background-position:center;
+    background-attachment:fixed;
 }
 .name {
+    font-size: 60px;    
+    color: white;
+    font-weight: normal;
+}
+.profession {
+    color: white;
+}
+.btn {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #1abc9c;
+    outline: none;
+    color: white;
+    margin-right: 10px;
+}
+.btn:focus {
+    outline: none;
+    border: 0;
     
+}
+.btn:hover {
+    color:#1abc9c;     
 }
 #wrapper.toggled {
     padding-left: 220px;
