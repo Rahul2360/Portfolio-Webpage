@@ -24,5 +24,17 @@ $(document).ready(function () {
   
   $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
-  });  
-});
+  });
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+            scrollTop: $(hash).offset().top,
+            scrollBottom: $(hash).offset().top
+            }, 800, function(){
+            window.location.hash = hash;
+        });
+    }
+  });
+ });
